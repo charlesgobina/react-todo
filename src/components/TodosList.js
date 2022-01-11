@@ -11,6 +11,7 @@ class TodosList extends React.Component {
             key={todo.id} 
             todo={todo}
             deleteTodoProps={this.props.deleteTodoProps}
+            setUpdate={this.props.setUpdate}
           />
         ))}
       </ul>
