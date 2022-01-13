@@ -1,0 +1,20 @@
+import React from 'react';
+
+const Home = () => {
+  return (
+    <>
+      <div className="homeWrapper">
+        <div className="homeContext">
+          <h1>Welcome Traveller!</h1>
+          <p>
+            Our Todo, is a web application that lets you add tasks to the todo list, 
+            check tasks if you completed them and delete tasks too. Users also have the 
+            possibility of updating any task by double clicking on them. It's built using React.
+          </p>
+        </div>
+      </div>
+    </>
+  );
+}
+
+export default Home

@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Nunito', sans-serif;
+}
+
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  line-height: 1.4;
+  color: #444;
+  background: #fff;
+  height: 100vh;
+}
+
+.inner {
+  box-shadow: 1px 2px 5px #858693;
+  padding: 20px;
+  margin: 0 20px;
+  z-index: 2;
+}
+
+.form-container {
+  width: 100%;
+  margin-bottom: 20px;
+  display: flex;
+  box-shadow: 0 1px 2px 0 #858693;
+  justify-content: space-between;
+  padding: 0 5px;
+  align-items: center;
+}
+
+input[type=checkbox] {
+  box-shadow: 1px 3px 5px 0 #858693;
+}
+
+.input-text {
+  font-size: 1rem;
+  font-weight: 400;
+  width: 85%;
+  padding-right: 5px;
+  padding-left: 10px;
+}
+
+.input-text::placeholder {
+  color: #000;
+}
+
+.input-submit {
+  background: transparent;
+  color: #5b5b5b;
+  text-transform: capitalize;
+  cursor: pointer;
+  font-weight: 600;
+  margin-right: 10px;
+}
+
+.input-text,
+.input-submit {
+  height: 45px;
+  outline: none;
+  border: none;
+}
+
+.homeContext {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+}
+
+.homeContext h1 {
+  font-weight: 600;
+}
+
+.contactContext {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+  gap: 10px;
+}
+
+.contactLearn a {
+  text-decoration: none;
+  color: #f1913f;
+}
+
+.contactContext h1 {
+  font-weight: 600;
+}
+
+@media screen and (min-width:768px){
+  .inner {
+    width: 600px;
+    margin: 0 auto;
+  }
+
+  .homeContext {
+    width: 600px;
+    margin: 0 auto;
+  }
+
+  .contactContext {
+    width: 600px;
+    margin: 0 auto;
+    text-align: center;
+  }
+}
