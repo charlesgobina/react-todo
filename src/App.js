@@ -5,17 +5,18 @@ import Header from './functionBased/components/Header';
 import Home from './functionBased/components/Home';
 import Contact from './functionBased/components/Contact';
 import './functionBased/App.css'
+import './App.css';
 
 const App = () => {
   return (
-    <>
+    <div className="appName">
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/todos" element={<TodoContainer />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
-    </>
+    </div>
   );
 }
 
