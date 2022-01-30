@@ -1,37 +1,36 @@
-import React, {useState} from "react";
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './Header.css';
 import { BiMenu, BiX } from 'react-icons/bi';
 
-
 const Header = () => {
-
-  const [navOpen, setNavOpen] = useState(false)
+  const [navOpen, setNavOpen] = useState(false);
 
   const handleToggle = () => {
-    setNavOpen((prev) => !prev)
-  }
+    setNavOpen((prev) => !prev);
+  };
 
   const closeNav = () => {
     setNavOpen((prev) => !prev);
   };
 
   const headerStyle = {
-    padding: "20px 20px",
-    lineHeight: "1.5em",
-  }
+    padding: '20px 20px',
+    lineHeight: '1.5em',
+  };
 
   return (
     <header style={headerStyle}>
       <nav className="naviBar">
         <h1
           style={{
-            fontSize: "1.1rem",
-            fontWeight: "800",
-            color: "#f1913f",
-            textTransform: "uppercase",
-            textAlign: "center",
-          }}>
+            fontSize: '1.1rem',
+            fontWeight: '800',
+            color: '#f1913f',
+            textTransform: 'uppercase',
+            textAlign: 'center',
+          }}
+        >
           todos
         </h1>
         <button onClick={handleToggle} type="button">
@@ -74,7 +73,7 @@ const Header = () => {
         </ul>
       </nav>
     </header>
-  )
-}
+  );
+};
 
-export default Header
+export default Header;

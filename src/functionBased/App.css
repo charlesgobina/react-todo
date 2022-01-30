@@ -96,7 +96,7 @@ input[type=checkbox] {
   font-weight: 600;
 }
 
-@media screen and (min-width:768px){
+@media screen and (min-width: 768px) {
   .inner {
     width: 600px;
     margin: 0 auto;
