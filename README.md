@@ -10,7 +10,7 @@ Todo, is a single page web application (SPA) that lets you add tasks to the todo
 * Gitflow
 
 ## Live Demo
-* [Live Demo](https://ractodo.netlify.app/)
+* [Live Demo](https://mcrvs-todo.herokuapp.com/todos)
 
 
 ## Software Requirements
